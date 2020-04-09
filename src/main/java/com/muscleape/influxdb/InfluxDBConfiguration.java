@@ -18,6 +18,8 @@ public class InfluxDBConfiguration {
     @Autowired
     private InfluxDBProperties influxDBProperties;
 
+
+
     @Bean
     public InfluxDBConnect getInfluxDBConnect() {
         InfluxDBConnect influxDB = new InfluxDBConnect(influxDBProperties.getUserName(), influxDBProperties.getPassword(),
